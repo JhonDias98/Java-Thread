@@ -6,7 +6,7 @@ public class AulaThread {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		// Thread processando em paralelo
+		// 1º Thread processando em paralelo
 		new Thread() {
 			
 			public void run() { //Executa o que nós queremos
@@ -27,6 +27,31 @@ public class AulaThread {
 				
 			}
 			
+		}.start(); // Inicia a thread que fica processando paralelamente por trás
+		
+		//********************Divisão das thread**************************
+		
+		// 2° Thread processando em paralelo
+		new Thread() {
+					
+			public void run() { //Executa o que nós queremos
+				// Código da rotina
+				// Código das rotinas que eu quero executar em paralelo
+				for(int pos = 0; pos < 10; pos++) {
+							
+					// Execulta com um tempo de parada, ou com um tempo determinado
+					try {
+						Thread.sleep(2000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+							
+					System.out.println("Executando a segunda rotina rotina");
+				}
+				// Fim do código em paralelo
+						
+			}
+					
 		}.start(); // Inicia a thread que fica processando paralelamente por trás
 		
 		
