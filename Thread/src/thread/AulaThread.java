@@ -29,7 +29,6 @@ public class AulaThread {
 			
 		}.start();// Inicia a thread que fica processando paralelamente por trás
 		
-		
 		// Código do sistema do usuário que vai continuar no fluxo de trabalho
 		System.out.println("Chegou ao final do teste de thread");
 		//Fluxo do sistema, como por exemplo uma emissão de nota fiscal
