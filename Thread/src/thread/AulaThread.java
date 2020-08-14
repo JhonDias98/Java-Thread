@@ -27,7 +27,7 @@ public class AulaThread {
 				
 			}
 			
-		}.start(); // Inicia a thread que fica processando paralelamente por trás
+		}.start();// Inicia a thread que fica processando paralelamente por trás
 		
 		
 		// Código do sistema do usuário que vai continuar no fluxo de trabalho
